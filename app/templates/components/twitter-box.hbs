@@ -1,0 +1,10 @@
+ <form action="">
+ 	<input type="text" placeholder="What´s happening"
+ 	value={{this.text}}
+ 	oninput={{action this.handleChange value="target.value"}}
+ 	>
+ 	<button {{action this.handleSubmit}}
+ 	>
+ 		Tweet
+ 	</button>
+ </form>

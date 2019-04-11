@@ -1,9 +1,9 @@
 import Controller from '@ember/controller';
 
 export default class ApplicationController extends Controller {
-	@tracked tweets=[
+	/*@tracked tweets=[
 		{id:1, user_name: "Yvone", description:"hola,hola", created_at:"ok"}
-	];
+	];*/
 	onSubmit(description){
 		let tweets= this.tweets.slice();
 

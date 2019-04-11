@@ -1,6 +1,8 @@
 <h1>twitter</h1>
-<TwitterBox />
+<TwitterBox 
+	@handleSubmit={{this.onSubmit}}
+/>
 <Feed 
-	
+<!--	@tweets={{this.tweets}}-->
 />
 {{outlet}}

@@ -1,12 +1,12 @@
 import Component from '@glimmer/component';
 import {tracked} from "@glimmer/tracking";
+import {action} from "@ember/object";
+
 
 export default class FeedComponent extends Component {
 	
-	@tracked tweets=[
-		{id:1,userName:"Yvone", description:"hola!"},
-		{id:2,userName:"Yvone", description:"que tal"},
-		{id:3,userName:"Yvone", description:"hola!"}
-	];
+	@tracked tweets=
+		this.args.tweets|| []
+	;
 	//typescript define què tipo de cosa es cada cosa, o proptypes
 }

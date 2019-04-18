@@ -1,3 +1,9 @@
-<li>{{@tweet.id}}</li>
-<li>{{@tweet.userName}}</li>
-<li>{{@tweet.description}}</li>
+<div class="actualTweet tweet2"> 
+	<div class="row">
+		<img class="llama" src= {{@tweet.avatar}} > 
+		<div>{{@tweet.user_name}}</div>
+		
+		<div>{{@tweet.description}}</div>
+	</div>
+	<div class="date">{{@tweet.created_at}}</div>
+</div>

@@ -5,6 +5,7 @@ import {action} from "@ember/object"
 export default class TwitterBoxComponent extends Component {
 	@tracked text;  //this.state.text
 	@tracked error;
+
 	@action
 	onInput(value){
 		this.error=false;
@@ -17,13 +18,13 @@ export default class TwitterBoxComponent extends Component {
 		console.log(text);
 		this.text= text;
 	}
-	@action async handleSubmit (){ 
+	@action handleSubmit (){ 
 		let newText=this.text;
-		if (this.args.onSubmit){  //sin parèntesis no ejecuta
-		let req= await  this.args.onSubmit(newText); //args=props    se va y queremos que luego regrese
+		//if (this.args.onSubmit){  //sin parèntesis no ejecuta
+		let req= this.args.handleSubmit(newText); //args=props    se va y queremos que luego regrese
 		this.error=req.error;
 		this.text= "";
-	}else
-		alert("HandleS");
+	/*}else
+		alert("HandleS");*/
 	}
 }

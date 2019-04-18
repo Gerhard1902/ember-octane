@@ -3,11 +3,13 @@
   "version": "0.0.0",
   "private": true,
   "description": "Small description for app-2 goes here",
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gerhard1902/ember-octane.git"
+  },
   "license": "MIT",
   "author": "",
   "directories": {
-    "doc": "doc",
     "test": "tests"
   },
   "scripts": {
@@ -50,5 +52,10 @@
   },
   "engines": {
     "node": "6.* || 8.* || >= 10.*"
-  }
+  },
+  "main": ".ember-cli.js",
+  "bugs": {
+    "url": "https://github.com/Gerhard1902/ember-octane/issues"
+  },
+  "homepage": "https://github.com/Gerhard1902/ember-octane#readme"
 }
